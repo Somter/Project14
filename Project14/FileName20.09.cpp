@@ -87,7 +87,7 @@ void ProcessList(HWND hWndList)
 {
     SendMessage(hWndList, LB_RESETCONTENT, 0, 0);
 
-    HANDLE hSnapShot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+    HANDLE hSnapShot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0); 
     PROCESSENTRY32 pe32;
     pe32.dwSize = sizeof(PROCESSENTRY32);
 
